@@ -7,7 +7,7 @@ A secure PDF viewer application built using React.js for the frontend and Node.j
 
 ## **Project Features**
 - Securely host and view PDFs using Node.js and React.js.
-- Disable right-click and screenshot keys (PrintScreen, Ctrl + PrintScreen).
+- Disable right-click.
 - Display a PDF viewer powered by PDF.js via `@react-pdf-viewer/core`.
 - Frontend and backend run on separate servers.
 
@@ -33,7 +33,7 @@ Ensure you have the following installed:
 ### **1. Clone the Repository**
 Clone the project from the GitHub repository:
 ```bash
-git clone https://github.com/<username>/secure-pdf-viewer.git
+git clone https://github.com/priyankawadle/SECURE-PDF-VIEWER.git
 cd secure-pdf-viewer
 ```
 
