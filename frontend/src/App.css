@@ -1,0 +1,73 @@
+/* 
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+select {
+  padding: 10px;
+  font-size: 16px;
+} */
+/* General styling for the app */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Styling for the main app container */
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Styling for the PDF viewer container */
+.viewer-container {
+  position: relative;
+  border: 1px solid #ccc;
+  height: 500px;
+  margin-top: 20px;
+  overflow: hidden;
+  background: #fff;
+}
+
+/* Blackout overlay for blocking screenshots */
+.screenshot-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  z-index: 9999;
+  display: none; /* Hidden by default */
+}
+
+.screenshot-overlay.active {
+  display: block; /* Show overlay when activated */
+}
+
+/* Blurring effect when screenshot is detected */
+body.screenshot-mode {
+  filter: blur(20px);
+  pointer-events: none; /* Disable interactions */
+  user-select: none; /* Disable text selection */
+}
+
+/* Styling for dropdown to select PDFs */
+select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
